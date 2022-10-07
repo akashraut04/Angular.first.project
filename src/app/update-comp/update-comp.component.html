@@ -1,0 +1,23 @@
+
+<div class="form-group">
+    <label for="employeeId"><span class="req">* </span> employeeId: </label>
+    <input required type="text" [(ngModel)]="employee.employeeId" id="id" id="number"
+        class="form-control phone" maxlength="28" placeholder="Enter your employeeId.." />
+</div>
+
+<div class="form-group">
+    <label for="employeeName"><span class="req">* </span> employeeName: </label>
+    <input class="form-control" type="text" [(ngModel)]="employee.employeeName" name="name" id="txt" required
+        placeholder="Enter your name" />
+    <div id="errFirst"></div>
+</div>
+
+<div class="form-group">
+    <label for="companyId"><span class="req">* </span> companyId : </label>
+    <input class="form-control" type="text" [(ngModel)]="employee.companyId" name="CompanyId" id="number"
+        placeholder="Enter your companyId" required />
+    <div id="errLast"></div>
+</div>
+<div class="form-group">
+    <input class="btn btn-success" type="submit" name="submit_reg" value="CreateData" (click)="updateData()">
+</div>
