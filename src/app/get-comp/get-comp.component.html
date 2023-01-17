@@ -5,11 +5,36 @@
 h1 {text-align: center;}
 table, th, td{
 
-border: 1px solid rgb(14, 1, 1);}
+border: 1px solid rgb(14, 1, 1);
+ border-collapse: collapse;
+}
+.employee {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 </style>
 </head>
+
 <body>
+    <h2 style="text-align:center;">Employee Details</h2>
+    <div style="text-align:center;">
+    <button (click)="getData()">Get</button>
+</div>
+    <table class="employee">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>CompanyId</th>
+        </tr>
+        <tr *ngFor="let emp of employee">
+            <td>{{emp.employeeId}}</td>
+            <td>{{emp.employeeName}}</td>
+            <td>{{emp.companyId}}</td>
+        </tr>
+    </table>
+</body>
+<!-- <body>
 <hr>
 <div class=" employee-list"></div>
 <div>
@@ -36,5 +61,5 @@ border: 1px solid rgb(14, 1, 1);}
             {{col}}
         </th> -->
         
-</table>
-</div>
+<!-- </table>
+</div> --> 

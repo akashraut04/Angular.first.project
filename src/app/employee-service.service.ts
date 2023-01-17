@@ -35,8 +35,3 @@ export class EmployeeServiceService {
   }
  
 }
-// getEmployee() : Observable<Employee[]>{
-
-//   return this.httpclient.get<Employee[]>(this.apiUrl)
-// }
-// }

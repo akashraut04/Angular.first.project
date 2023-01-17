@@ -52,9 +52,19 @@ border: 1px solid black;}
   <!-- </div> -->
  
   <nav class="navbar navbar-dark bg-primary">
-    <h1>Employee TABLE</h1>
+    <h1 style="text-align:center;">Employee TABLE</h1>
     </nav>
-<app-get-comp></app-get-comp> 
+    <!-- <app-get-comp></app-get-comp>  -->
+<!-- <app-get-comp></app-get-comp> 
 <app-create-comp></app-create-comp>
  <app-update-comp></app-update-comp>
- <app-delete-comp></app-delete-comp> 
+ <app-delete-comp></app-delete-comp>  -->
+  <nav style="text-align:center;">
+   
+      <button  routerLink="/get" routerLinkActive="active">Employee List </button > 
+      <button  routerLink="/create" routerLinkActive="active">create</button >
+      <button  routerLink="/update" routerLinkActive="active">update</button >
+      <button  routerLink="/delete" routerLinkActive="active">delete</button >
+    
+  </nav> 
+  <router-outlet></router-outlet>

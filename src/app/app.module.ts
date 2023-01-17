@@ -18,6 +18,7 @@ import { DeleteCompComponent } from './delete-comp/delete-comp.component'
 @NgModule({
   declarations: [
     AppComponent,
+    // routingComponants,
     GetCompComponent,
   CreateCompComponent,
   UpdateCompComponent,

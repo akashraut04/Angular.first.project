@@ -4,6 +4,8 @@
     <input required type="text" [(ngModel)]="employee.employeeId" id="id" id="number"
         class="form-control phone" maxlength="28" placeholder="Enter your employeeId.." />
 </div> -->
+<body style="text-align:center;">
+    <h2>Enter your Details </h2>
 
 <div class="form-group">
     <label for="employeeName"><span class="req">* </span> employeeName: </label>
@@ -18,6 +20,8 @@
         placeholder="Enter your companyId" required />
     <div id="errLast"></div>
 </div>
+
 <div class="form-group">
     <input class="btn btn-success" type="submit" name="submit_reg" value="CreateData" (click)="creatEmployee()">
 </div>
+</body>
